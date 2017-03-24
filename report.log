@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.8)  17 MAR 2017 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.8)  24 MAR 2017 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1155,35 +1155,15 @@ Package pdftex.def Info: logo.jpg used on input line 40.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-<2.pdf, id=5, page=3, 722.7pt x 542.025pt>
-File: 2.pdf Graphic file (type pdf)
- <use 2.pdf, page 3>
-Package pdftex.def Info: 2.pdf, page3 used on input line 45.
+<21.pdf, id=5, page=12, 722.7pt x 542.025pt>
+File: 21.pdf Graphic file (type pdf)
+ <use 21.pdf, page 12>
+Package pdftex.def Info: 21.pdf, page12 used on input line 45.
 (pdftex.def)             Requested size: 513.5706pt x 385.17953pt.
+ [1
 
-<2.pdf, id=6, page=4, 722.7pt x 542.025pt> [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.jpg>]
-File: 2.pdf Graphic file (type pdf)
- <use 2.pdf, page 4>
-Package pdftex.def Info: 2.pdf, page4 used on input line 47.
-(pdftex.def)             Requested size: 513.5706pt x 385.17953pt.
-
-<2.pdf, id=27, page=5, 722.7pt x 542.025pt>
-File: 2.pdf Graphic file (type pdf)
- <use 2.pdf, page 5>
-Package pdftex.def Info: 2.pdf, page5 used on input line 49.
-(pdftex.def)             Requested size: 540.60239pt x 405.45084pt.
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 49--50
-[][] 
- []
-
-[2 <./2.pdf> <./2.pdf
-
-pdfTeX warning: pdflatex (file ./2.pdf): PDF inclusion: multiple pdfs with page
- group included in a single page
->] (./star.java
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.jpg>] (./problem1.j
+ava
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <12> not available
@@ -1192,123 +1172,140 @@ LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
 LaTeX Font Info:    Try loading font information for OMS+LinuxLibertineT-TLF on
- input line 2.
-LaTeX Font Info:    No file OMSLinuxLibertineT-TLF.fd. on input line 2.
+ input line 4.
+LaTeX Font Info:    No file OMSLinuxLibertineT-TLF.fd. on input line 4.
 
 
 LaTeX Font Warning: Font shape `OMS/LinuxLibertineT-TLF/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 2.
+(Font)              for symbol `textbraceleft' on input line 4.
 
 LaTeX Font Info:    Try loading font information for OML+LinuxLibertineT-TLF on
- input line 4.
-LaTeX Font Info:    No file OMLLinuxLibertineT-TLF.fd. on input line 4.
+ input line 9.
+LaTeX Font Info:    No file OMLLinuxLibertineT-TLF.fd. on input line 9.
 
 LaTeX Font Warning: Font shape `OML/LinuxLibertineT-TLF/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 4.
+(Font)              for symbol `textless' on input line 9.
 
+[2 <./21.pdf>]) <problem1.png, id=68, 928.46875pt x 487.8225pt>
+File: problem1.png Graphic file (type png)
+
+<use problem1.png>
+Package pdftex.def Info: problem1.png used on input line 47.
+(pdftex.def)             Requested size: 540.60239pt x 284.0389pt.
+ <21.pdf, id=69, page=14, 722.7pt x 542.025pt>
+File: 21.pdf Graphic file (type pdf)
+
+<use 21.pdf, page 14>
+Package pdftex.def Info: 21.pdf, page14 used on input line 48.
+(pdftex.def)             Requested size: 513.5706pt x 385.17953pt.
+ <21.pdf, id=70, page=15, 722.7pt x 542.025pt> [3 <./problem1.png>]
+File: 21.pdf Graphic file (type pdf)
+ <use 21.pdf, page 15>
+Package pdftex.def Info: 21.pdf, page15 used on input line 50.
+(pdftex.def)             Requested size: 540.60239pt x 405.45084pt.
+ <star.png, id=74, 845.1575pt x 419.5675pt>
+File: star.png Graphic file (type png)
+
+<use star.png>
+Package pdftex.def Info: star.png used on input line 51.
+(pdftex.def)             Requested size: 540.60239pt x 268.38142pt.
+ <21.pdf, id=75, page=16, 722.7pt x 542.025pt>
+File: 21.pdf Graphic file (type pdf)
+
+<use 21.pdf, page 16>
+Package pdftex.def Info: 21.pdf, page16 used on input line 52.
+(pdftex.def)             Requested size: 540.60239pt x 405.45084pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 50--53
+[][]
+ []
+
+[4 <./21.pdf>] [5 <./21.pdf> <./star.png>] (./problem4.java)
+<problem4.png, id=128, 928.46875pt x 487.8225pt>
+File: problem4.png Graphic file (type png)
+ <use problem4.png>
+Package pdftex.def Info: problem4.png used on input line 54.
+(pdftex.def)             Requested size: 540.60239pt x 284.0389pt.
+
+<21.pdf, id=129, page=17, 722.7pt x 542.025pt>
+File: 21.pdf Graphic file (type pdf)
+ <use 21.pdf, page 17>
+Package pdftex.def Info: 21.pdf, page17 used on input line 55.
+(pdftex.def)             Requested size: 513.5706pt x 385.17953pt.
+ [6 <./21.pdf>] (./problem5.java [7 <./problem4.png> <./21.pdf>])
+<problem5.png, id=143, 928.46875pt x 487.8225pt>
+File: problem5.png Graphic file (type png)
+ <use problem5.png>
+Package pdftex.def Info: problem5.png used on input line 57.
+(pdftex.def)             Requested size: 540.60239pt x 284.0389pt.
+
+<21.pdf, id=144, page=18, 722.7pt x 542.025pt>
+File: 21.pdf Graphic file (type pdf)
+ <use 21.pdf, page 18>
+Package pdftex.def Info: 21.pdf, page18 used on input line 58.
+(pdftex.def)             Requested size: 513.5706pt x 385.17953pt.
+
+(./problem6.java [8 <./problem5.png> <./21.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
 LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
- input line 5.
+ input line 4.
+
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 4.
 )
-<star.png, id=93, 845.1575pt x 419.5675pt>
-File: star.png Graphic file (type png)
- <use star.png>
-Package pdftex.def Info: star.png used on input line 51.
-(pdftex.def)             Requested size: 540.60239pt x 268.38142pt.
+<problem6.png, id=188, 928.46875pt x 487.8225pt>
+File: problem6.png Graphic file (type png)
+ <use problem6.png>
+Package pdftex.def Info: problem6.png used on input line 60.
+(pdftex.def)             Requested size: 540.60239pt x 284.0389pt.
 
-<2.pdf, id=94, page=6, 722.7pt x 542.025pt>
-File: 2.pdf Graphic file (type pdf)
- <use 2.pdf, page 6>
-Package pdftex.def Info: 2.pdf, page6 used on input line 52.
-(pdftex.def)             Requested size: 540.60239pt x 405.45084pt.
- [3 <./2.pdf>]
-<2.pdf, id=127, page=7, 722.7pt x 542.025pt>
-File: 2.pdf Graphic file (type pdf)
- <use 2.pdf, page 7>
-Package pdftex.def Info: 2.pdf, page7 used on input line 54.
+<21.pdf, id=189, page=20, 722.7pt x 542.025pt>
+File: 21.pdf Graphic file (type pdf)
+ <use 21.pdf, page 20>
+Package pdftex.def Info: 21.pdf, page20 used on input line 62.
 (pdftex.def)             Requested size: 513.5706pt x 385.17953pt.
+ [9 <./problem6.png>] (./problem7.java) <problem7.png, id=197, 928.46875pt x 48
+7.8225pt>
+File: problem7.png Graphic file (type png)
 
-<2.pdf, id=128, page=8, 722.7pt x 542.025pt> [4 <./star.png> <./2.pdf>]
-File: 2.pdf Graphic file (type pdf)
+<use problem7.png>
+Package pdftex.def Info: problem7.png used on input line 64.
+(pdftex.def)             Requested size: 540.60239pt x 284.0389pt.
+ <21.pdf, id=198, page=21, 722.7pt x 542.025pt>
+File: 21.pdf Graphic file (type pdf)
 
-<use 2.pdf, page 8>
-Package pdftex.def Info: 2.pdf, page8 used on input line 56.
+<use 21.pdf, page 21>
+Package pdftex.def Info: 21.pdf, page21 used on input line 65.
 (pdftex.def)             Requested size: 513.5706pt x 385.17953pt.
- (./printtest.java [5 <./2.pdf> <./2.pdf
+ [10 <./21.pdf>] (./problem8.java [11 <./problem7.png> <./21.pdf>]) <problem8.p
+ng, id=254, 928.46875pt x 487.8225pt>
+File: problem8.png Graphic file (type png)
+ <use problem8.png>
+Package pdftex.def Info: problem8.png used on input line 67.
+(pdftex.def)             Requested size: 540.60239pt x 284.0389pt.
 
-pdfTeX warning: pdflatex (file ./2.pdf): PDF inclusion: multiple pdfs with page
- group included in a single page
->]) <printtest.png, id=201, 711.65875pt x 341.275pt>
-File: printtest.png Graphic file (type png)
- <use printtest.png>
-Package pdftex.def Info: printtest.png used on input line 59.
-(pdftex.def)             Requested size: 540.60239pt x 259.2519pt.
-
-<2.pdf, id=202, page=9, 722.7pt x 542.025pt>
-File: 2.pdf Graphic file (type pdf)
- <use 2.pdf, page 9>
-Package pdftex.def Info: 2.pdf, page9 used on input line 60.
-(pdftex.def)             Requested size: 540.60239pt x 405.45084pt.
- [6 <./printtest.png>] (./literal.java) <literal.png, id=206, 912.40875pt x 360
-.34625pt>
-File: literal.png Graphic file (type png)
-
-<use literal.png>
-Package pdftex.def Info: literal.png used on input line 62.
-(pdftex.def)             Requested size: 540.60239pt x 213.50967pt.
- <2.pdf, id=207, page=12, 722.7pt x 542.025pt>
-File: 2.pdf Graphic file (type pdf)
-
-<use 2.pdf, page 12>
-Package pdftex.def Info: 2.pdf, page12 used on input line 63.
-(pdftex.def)             Requested size: 540.60239pt x 405.45084pt.
- [7 <./2.pdf>] (./scan.java [8 <./literal.png> <./2.pdf>])
-<scan.png, id=303, 919.435pt x 309.155pt>
-File: scan.png Graphic file (type png)
- <use scan.png>
-Package pdftex.def Info: scan.png used on input line 65.
-(pdftex.def)             Requested size: 540.60239pt x 181.78189pt.
-
-<2.pdf, id=304, page=13, 722.7pt x 542.025pt>
-File: 2.pdf Graphic file (type pdf)
- <use 2.pdf, page 13>
-Package pdftex.def Info: 2.pdf, page13 used on input line 67.
-(pdftex.def)             Requested size: 540.60239pt x 405.45084pt.
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 67--68
-[][] 
- []
-
-(./degree.java [9 <./scan.png> <./2.pdf>])
-<degree.png, id=370, 910.40125pt x 399.4925pt>
-File: degree.png Graphic file (type png)
- <use degree.png>
-Package pdftex.def Info: degree.png used on input line 69.
-(pdftex.def)             Requested size: 540.60239pt x 237.22246pt.
- [10 <./degree.png>] (./report.aux)
+[12 <./problem8.png>] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16404 strings out of 493029
- 311090 string characters out of 6136235
- 426110 words of memory out of 5000000
- 19527 multiletter control sequences out of 15000+600000
- 32848 words of font info for 88 fonts, out of 8000000 for 9000
+ 16399 strings out of 493029
+ 310952 string characters out of 6136235
+ 495110 words of memory out of 5000000
+ 19535 multiletter control sequences out of 15000+600000
+ 26311 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,72p,473b,1595s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,72p,473b,1647s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{/usr/shar
 e/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{/usr/share/texl
@@ -1319,44 +1316,27 @@ mf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nan
-umtype1/nanummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumt
-ype1/nanummjmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype
-1/nanummjmb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/n
-anummjmb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanu
-mmjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummj
-mb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/nanumtype1/nanummjmc8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/nanumtype1/nanummjmd0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/nanumtype1/nanummjmd1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/na
-numtype1/nanummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanum
-type1/nanummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtyp
-e1/nanummjmd6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/
-nanummjmd6.pfb>
-Output written on report.pdf (10 pages, 4483414 bytes).
+ype1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/nanumtype1/nanummjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nan
+umtype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjmbd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype
+1/nanummjmc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjmc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanu
+mmjmc5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+mc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb>
+Output written on report.pdf (12 pages, 2842333 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
+ 339 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

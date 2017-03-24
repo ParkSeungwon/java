@@ -2,10 +2,10 @@
 public class problem8 {
 	private static String[] split(String s) {
 		int n = 0;
-		for(int i=0; i<s.length(); i++) if(s.charAt(2) == ',') n++;
+		for(int i=0; i<s.length(); i++) if(s.charAt(i) == ',') n++;
 		String[] sr = new String[n+1];
-		n = 0; int j=0;
-		for(int i=0; i<s.length(); i++) if(s.charAt(i) == ',') {
+		n = 0;
+		for(int i=0, j=0; i<s.length(); i++) if(s.charAt(i) == ',') {
 			sr[j++] = s.substring(n, i);
 			n = i+1;
 		}
@@ -22,10 +22,11 @@ public class problem8 {
 		if(s.equalsIgnoreCase(s2)) System.out.println("equal ignore case"); 
 		else System.out.println("not equal"); 
 		System.out.println(s.charAt(2));
-		//System.out.println(s.substr(2,5) + " " + s2.substr(2,5));
+		System.out.println(s.substring(2,5) + " " + s2.substring(2,5));
 		String s3 = "abc,def";
-//		String[] sr = split(s3);
-		for(String si : split(s3))System.out.println(si); 
+		for(String si : split(s3)) System.out.println(si); 
+		if(s.indexOf("adf") == 0) System.out.println("starts with adf");
+		else System.out.println("does not start with adf"); 
 	}
 }
 
