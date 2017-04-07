@@ -2,26 +2,12 @@
 import java.util.Scanner;
 
 public class problem1 {
-	private static int[][] transpose(int[][] arr) {
-		int y = arr.length;
-		int x = arr[0].length;
-		int[][] ar = new int[x][y];
-		for(int j=0; j<y; j++) for(int i=0; i<x; i++) ar[i][j] = arr[j][i];
-		return ar;
-	}
-	private static void print_array(int[][] arr) {
-		int y = arr.length;
-		int x = arr[0].length;
-		for(int j=0; j<y; j++) {
-			for(int i=0; i<x; i++) System.out.print(arr[j][i] + " ");
-			System.out.println();
-		}
+	static private boolean is_prime(int n) {
+		for(int i=2; i<=n/2; i++) if(n % i == 0) return false;
+		return true;
 	}
 	public static void main(String[] args) {
-		int[][] ar = {{1,2,3},{4,5,6}};//new int[2][3];
-		print_array(ar);
-		int[][] result = transpose(ar);
-		print_array(result);
+		for(int i=2; i<100; i++) if(is_prime(i)) System.out.print(i + " "); 
 	}
 }
 
