@@ -1,20 +1,32 @@
 //2016110056 박승원
 
-public class problem3
-{
+class Dog {
+	private String name;
+	public String breed;
+	private int age;
+
+	String getName() { return name; }
+	void setName(String name) { this.name = name; }
+	int getAge() { return age; }
+	void setAge(int age) { this.age = age; }
 	
-	private static boolean is_palindrom(int n) {
-		if(n < 10) return true;
-		int i = 1;
-		while(i < n) i *= 10;
-		i /= 10;
-		if(n / i == n % 10) return is_palindrom(n % i / 10);
-		else return false;
+	public Dog(String name, int age) {
+		this.name = name;
+		this.age = age;
+		this.breed = null;
 	}
 
+	public Dog(String name, String breed, int age) {
+		this.name = name;
+		this.age = age;
+		this.breed = breed;
+	}
+}
+
+public class problem3
+{
 	static public void main(String[] args) {
-		int[] ar = {121, 526625, 362341, 36763, 478230};
-		for(int i=0; i<5; i++) if(is_palindrom(ar[i]))
-			System.out.println(ar[i] + " is palindrom");
+		Dog d = new Dog("멍멍이", "진돗개", 3);
+		d.setAge(5);
 	}
 }

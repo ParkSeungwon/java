@@ -1,1 +1,1 @@
-gvim -p `ls -t *.java *.tex`
+gvim -p `ls -t *.java *.tex` &

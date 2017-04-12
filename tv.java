@@ -21,6 +21,7 @@ public class tv {
 		System.out.println(a.a());
 
 		A.B ab = a.new B();
+		int[] arr = new int[5];
 	}
 }
 
