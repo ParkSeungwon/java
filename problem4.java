@@ -1,4 +1,5 @@
 //2016110056 박승원
+import lib.*;
 
 class Matrix {
 	private int row = 0;
