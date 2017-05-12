@@ -1,92 +1,59 @@
 //2016110056 박승원
+import java.util.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-interface Collection 
-{
-	void add(Object obj);
-	void delete();
-	void find(Object obj);
-	int currentCount();
-}
+class Bank extends JFrame {
+	JLabel jl1, jl2, jl3;
+	JTextField jt1, jt2;
+	JButton jb;
+	JPanel jp;
 
-class Link
-{
-	Object data;
-	Link next;
-
-	Link(Object d, Link n) {
-		data = d;
-		next = n;
-	}
-}
-
-class Queue implements Collection 
-{
-	private Link head = null;
-	private Link tail = null;
-	private Link ptr = null;
-	private int count = 0;
-
-	public void add(Object obj) {
-		if(count == 0) {
-			head = new Link(obj, null);
-			tail = head;
-		} else {
-			tail.next = new Link(obj, null);
-			tail = tail.next;
+	class MyListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			float f = Integer.parseInt(jt1.getText()) 
+				* 0.01f * Float.parseFloat(jt2.getText());
+			jl3.setText("이자는 년 " + Float.toString(f) + "입니다.");
 		}
-		tail.data = obj;
-		count++;
-		System.out.println(obj + " is added.");
+	}	
+
+	Bank() {
+		setSize(300, 200);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("이자 계산기");
+
+		jp = new JPanel();
+		jb = new JButton("변환");
+		jl1 = new JLabel("원금을 입력하시오");
+		jl2 = new JLabel("이율을 입력하시오");
+		jl3 = new JLabel("");
+		jt1 = new JTextField();
+		jt2 = new JTextField();
+
+		jb.addActionListener(new MyListener());
+
+		add(jp);
+		jp.setLayout(null);
+		jp.add(jl1);
+		jp.add(jl2);
+		jp.add(jl3);
+		jp.add(jb);
+		jp.add(jt1);
+		jp.add(jt2);
+		jl1.setBounds(0, 0, 200, 50);
+		jl2.setBounds(0, 50, 200, 50);
+		jl3.setBounds(10, 150, 200, 50);
+		jt1.setBounds(200, 0, 100, 50);
+		jt2.setBounds(200, 50, 100, 50);
+		jb.setBounds(10, 100, 100, 50);
+		setVisible(true);
 	}
+}	
 
-	public void delete() {
-		System.out.println(head.data + " is deleted.");
-		head = head.next;
-		if(head == tail) tail = head;
-		count--;
-	}
-
-	public void find(Object obj) {
-		int i = 0;
-		Link l;
-		for(l = head; l != null; l = l.next) {
-			i++;
-			if(l.data == obj) {
-				System.out.println(obj + " is " + i + "th in queue");
-				break;
-			}
-		}
-		if(l == null) System.out.println(obj + " is not in the queue."); 
-	}
-
-	public int currentCount() {
-		System.out.println(count + " objects are found.");
-		return count;
-	}
-}
-
-public class problem2 
-{
-	static public void main(String[] args) {
-		System.out.println("Queue Simulator start");
-		
-		Queue q = new Queue();
-		Integer a = new Integer(1);
-
-		q.add(new Integer(1));
-		q.add(a);
-		q.add(new Integer(5));
-
-		q.currentCount();
-		q.find(new Integer(5));
-		q.find(a);
-
-		q.delete();
-		q.delete();
-		q.delete();
-
-		q.currentCount();
-
-		System.out.println("Queue Simulator end.");
+public class problem2 {
+	public static void main(String[] args) {
+		Bank b = new Bank();
 	}
 }
+
