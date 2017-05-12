@@ -1,19 +1,35 @@
 //2016110056 박승원
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 class Calc extends JFrame {
-	final int W = 90, H = 60;
+	private JTextField jt;
+	private JPanel p;
+	final int W = 60, H = 40;
+	class MyListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			JButton bt = (JButton)e.getSource();
+			jt.setText(bt.getText());
+			p.setBackground(Color.YELLOW);
+		}
+	}
+
+//	class KeyEvent implements KeyListener {
+//		public void KeyTyped(KeyEvent e) {
+//		}
+//	}
+	
 	public Calc() {
 		setSize(W * 4, H * 5);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("2016110056 박승원");
 
-		JPanel p = new JPanel();
+		p = new JPanel();
 		p.setLayout(null);
 		add(p);
 
-		JTextField jt = new JTextField();
+		jt = new JTextField();
 		p.add(jt);
 		jt.setBounds(0, 0, W*4, H);
 
@@ -24,6 +40,7 @@ class Calc extends JFrame {
 		for(int j = 0, y = 0; y < 4 * H; y += H) {
 			for(int x = 0; x < 4 * W; x += W) {
 				p.add(bts[j]);
+				bts[j].addActionListener(new MyListener());
 				bts[j++].setBounds(x, H + y, W, H);
 			}
 		}
