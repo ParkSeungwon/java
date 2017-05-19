@@ -2,50 +2,66 @@
 import java.util.*;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.event.*;
+import java.awt.Color;
 
-class FileOpen extends JFrame {
-	JLabel jl;
-	JButton jb1, jb2;
-	JFileChooser jf;
-	JPanel jp;
+class MyFrame extends JFrame {
+	int startx = 30, starty = 30, size = 150;
+	boolean happy = false;
 
-	class MyListener implements ActionListener {
+	class MyComponent extends JPanel implements ActionListener {
+		JButton bt ;
 		public void actionPerformed(ActionEvent e) {
-			if(e.getSource() == jb1) jf.showOpenDialog(FileOpen.this);
-			else if(e.getSource() == jb2) jl.setText(jf.getSelectedFile().getName());
+			if(!happy) bt.setText("I am happy now");
+			else bt.setText("Make me Smile");
+			happy = !happy;
+			repaint();
 		}
-	}	
+		public void paintComponent(Graphics g) {
+			if(happy) {
+				g.setColor(Color.BLUE);
+				g.fillRect(0,0,300,300);
+				g.setColor(Color.YELLOW);
+				g.fillArc(startx, starty, startx + size, starty + size, 0, 360);
+				g.setColor(Color.BLACK);
+				g.drawArc(startx + 50, starty+30, 25, 25, 0, 180);
+				g.drawArc(startx + 110, starty+30, 25, 25, 0, 180);
+				g.drawArc(startx + 60, starty + 100, 60, 60, 180, 180);
+			} else {
+				g.setColor(Color.MAGENTA);
+				g.fillRect(0,0,300,300);
+				g.setColor(Color.YELLOW);
+				g.fillArc(startx, starty, startx + size, starty + size, 0, 360);
+				g.setColor(Color.BLACK);
+				g.drawLine(startx + 50, starty+30, startx + 90, starty+30);
+				g.drawLine(startx + 110, starty+30, startx + 150, starty+30);
+				for(int x=startx+60, y=starty+120, i=0, j=1; i<8; i++, j*=-1)
+					g.drawLine(x, y,  x += 10, y -= 10 * j);
+			}
+		}
+		public MyComponent() {
+			bt = new JButton("Make me Smile");
+			add(bt);
+			bt.setVisible(true);
+			bt.addActionListener(this);
+			setVisible(true);
+		}
+	}
 
-	FileOpen() {
-		setSize(300, 200);
+	public MyFrame() {
+		setSize(300, 300);
+		setTitle("snow man face");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("파일 선택기 테스트");
-
-		jp = new JPanel();
-		jb1 = new JButton("파일 오픈");
-		jb2 = new JButton("선택된 파일");
-		jl = new JLabel("파일 선택기 컴포넌트 테스트입니다.");
-		jf = new JFileChooser();
-
-		jb1.addActionListener(new MyListener());
-		jb2.addActionListener(new MyListener());
-
-		add(jp);
-		jp.setLayout(null);
-		jp.add(jl);
-		jp.add(jb1);
-		jp.add(jb2);
-		jl.setBounds(10, 0, 200, 50);
-		jb1.setBounds(10, 50, 100, 50);
-		jb2.setBounds(100, 50, 100, 50);
+		add(new MyComponent());
 		setVisible(true);
 	}
-}	
+}
 
 public class problem1 {
 	public static void main(String[] args) {
-		FileOpen fo = new FileOpen();
+		MyFrame mp = new MyFrame();
 	}
 }
 

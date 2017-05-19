@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.8)  12 MAY 2017 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.8)  19 MAY 2017 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1155,10 +1155,10 @@ Package pdftex.def Info: logo.jpg used on input line 40.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-<1.pdf, id=5, page=4, 844.15375pt x 597.23125pt>
+<1.pdf, id=5, page=3, 844.15375pt x 597.23125pt>
 File: 1.pdf Graphic file (type pdf)
- <use 1.pdf, page 4>
-Package pdftex.def Info: 1.pdf, page4 used on input line 45.
+ <use 1.pdf, page 3>
+Package pdftex.def Info: 1.pdf, page3 used on input line 45.
 (pdftex.def)             Requested size: 540.60239pt x 382.48186pt.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 45--46
@@ -1186,77 +1186,88 @@ LinuxLibertineT-TLF.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
 LaTeX Font Info:    Try loading font information for OMS+LinuxLibertineT-TLF on
- input line 7.
-LaTeX Font Info:    No file OMSLinuxLibertineT-TLF.fd. on input line 7.
+ input line 10.
+LaTeX Font Info:    No file OMSLinuxLibertineT-TLF.fd. on input line 10.
 
 
 LaTeX Font Warning: Font shape `OMS/LinuxLibertineT-TLF/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 7.
+(Font)              for symbol `textbraceleft' on input line 10.
 
-[2 <./1.pdf>]) <1.png, id=69, 700.6175pt x 558.085pt>
-File: 1.png Graphic file (type png)
- <use 1.png>
-Package pdftex.def Info: 1.png used on input line 47.
-(pdftex.def)             Requested size: 540.60239pt x 430.655pt.
-
-<1.pdf, id=70, page=8, 844.15375pt x 597.23125pt> [3]
-File: 1.pdf Graphic file (type pdf)
- <use 1.pdf, page 8>
-Package pdftex.def Info: 1.pdf, page8 used on input line 49.
-(pdftex.def)             Requested size: 540.60239pt x 382.48186pt.
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 49--50
-[][] 
- []
-
-[4 <./1.png>] (./problem2.java [5 <./1.pdf>])
-<2.png, id=122, 301.125pt x 228.855pt>
-File: 2.png Graphic file (type png)
- <use 2.png>
-Package pdftex.def Info: 2.png used on input line 51.
-(pdftex.def)             Requested size: 540.60239pt x 410.93994pt.
-
-<1.pdf, id=124, page=11, 844.15375pt x 597.23125pt> [6]
-File: 1.pdf Graphic file (type pdf)
- <use 1.pdf, page 11>
-Package pdftex.def Info: 1.pdf, page11 used on input line 53.
-(pdftex.def)             Requested size: 540.60239pt x 382.48186pt.
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 53--54
-[][] 
- []
-
-[7 <./2.png>] (./problem3.java
+[2 <./1.pdf>]
 LaTeX Font Info:    Try loading font information for OML+LinuxLibertineT-TLF on
- input line 14.
-LaTeX Font Info:    No file OMLLinuxLibertineT-TLF.fd. on input line 14.
+ input line 40.
+LaTeX Font Info:    No file OMLLinuxLibertineT-TLF.fd. on input line 40.
 
 
 LaTeX Font Warning: Font shape `OML/LinuxLibertineT-TLF/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 14.
+(Font)              for symbol `textless' on input line 40.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
-[8 <./1.pdf>] [9]) <3.png, id=174, 240.9pt x 228.855pt>
+(Font)              <6> on input line 40.
+[3]) <1.png, id=75, 301.125pt x 329.23pt>
+File: 1.png Graphic file (type png)
+ <use 1.png>
+Package pdftex.def Info: 1.png used on input line 47.
+(pdftex.def)             Requested size: 270.3012pt x 295.55573pt.
+
+<2.png, id=77, 301.125pt x 329.23pt>
+File: 2.png Graphic file (type png)
+ <use 2.png>
+Package pdftex.def Info: 2.png used on input line 48.
+(pdftex.def)             Requested size: 270.3012pt x 295.55573pt.
+
+Overfull \hbox (2.00041pt too wide) in paragraph at lines 47--49
+[] [] 
+ []
+
+<1.pdf, id=78, page=4, 844.15375pt x 597.23125pt>
+File: 1.pdf Graphic file (type pdf)
+ <use 1.pdf, page 4>
+Package pdftex.def Info: 1.pdf, page4 used on input line 50.
+(pdftex.def)             Requested size: 540.60239pt x 382.48186pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 50--51
+[][] 
+ []
+
+(./problem2.java [4 <./1.png> <./2.png> <./1.pdf>] [5])
+<3.png, id=120, 401.5pt x 329.23pt>
 File: 3.png Graphic file (type png)
  <use 3.png>
-Package pdftex.def Info: 3.png used on input line 55.
-(pdftex.def)             Requested size: 432.48355pt x 410.89804pt.
- [10 <./3.png>] (./report.aux)
+Package pdftex.def Info: 3.png used on input line 52.
+(pdftex.def)             Requested size: 432.48355pt x 354.65884pt.
+
+<1.pdf, id=121, page=5, 844.15375pt x 597.23125pt>
+File: 1.pdf Graphic file (type pdf)
+ <use 1.pdf, page 5>
+Package pdftex.def Info: 1.pdf, page5 used on input line 54.
+(pdftex.def)             Requested size: 540.60239pt x 382.48186pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 54--55
+[][] 
+ []
+
+[6 <./3.png>] (./problem3.java [7 <./1.pdf>])
+<4.png, id=161, 401.5pt x 329.23pt>
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 56.
+(pdftex.def)             Requested size: 432.48355pt x 354.65884pt.
+ [8] [9 <./4.png>] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16415 strings out of 493029
- 311028 string characters out of 6136235
- 549110 words of memory out of 5000000
- 19548 multiletter control sequences out of 15000+600000
- 30384 words of font info for 82 fonts, out of 8000000 for 9000
+ 16394 strings out of 493029
+ 310633 string characters out of 6136235
+ 529110 words of memory out of 5000000
+ 19536 multiletter control sequences out of 15000+600000
+ 25732 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,72p,473b,1647s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/us
@@ -1273,33 +1284,23 @@ ype1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-nanumtype1/nanummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nan
-umtype1/nanummjmb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumt
-ype1/nanummjmb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype
-1/nanummjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/n
-anummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanu
-mmjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummj
-mbd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/nanumtype1/nanummjmd3.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/nanumtype1/nanummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/nanumtype1/nanummjmd6.pfb>
-Output written on report.pdf (10 pages, 1813024 bytes).
+nanumtype1/nanummjmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nan
+umtype1/nanummjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype
+1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjmbd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanu
+mmjmc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+mc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb>
+Output written on report.pdf (9 pages, 1238471 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 250 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,57 +3,46 @@ import java.util.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Random;
 
-class Bank extends JFrame {
-	JLabel jl1, jl2, jl3;
-	JTextField jt1, jt2;
-	JButton jb;
-	JPanel jp;
+class Dice extends JPanel implements ActionListener {
+	JButton bt = new JButton("던지기");
+	int eye1, eye2;
+	public void paintComponent(Graphics g) {
+		g.clearRect(0,0,400,300);
+		g.drawRect(50, 100, 100, 100);
+		g.drawRect(200, 100, 100, 100);
+		System.out.println(eye1);
+		System.out.println(eye2);
+		for(int i=0; i<eye1; i++) g.fillArc(80+20*(i%2),120+20*(i/2),10,10,0,360);
+		for(int i=0; i<eye2; i++) g.fillArc(240+20*(i%2),120+20*(i/2),10,10,0,360);
+	}
+	public void actionPerformed(ActionEvent e) {
+		Random rd = new Random();
+		int k = rd.nextInt();
+		eye1 = (k>0?k:-k) % 6 + 1;
+		k = rd.nextInt();
+		eye2 = (k>0?k:-k) % 6 + 1;
+		repaint();
+	}
+	public Dice() {
+		add(bt);
+		bt.addActionListener(this);
+	}
+}
 
-	class MyListener implements ActionListener {
-		public void actionPerformed(ActionEvent e) {
-			float f = Integer.parseInt(jt1.getText()) 
-				* 0.01f * Float.parseFloat(jt2.getText());
-			jl3.setText("이자는 년 " + Float.toString(f) + "입니다.");
-		}
-	}	
-
-	Bank() {
-		setSize(300, 200);
+class Prg extends JFrame {
+	public Prg() {
+		setSize(400, 300);
+		setTitle("Dice");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("이자 계산기");
-
-		jp = new JPanel();
-		jb = new JButton("변환");
-		jl1 = new JLabel("원금을 입력하시오");
-		jl2 = new JLabel("이율을 입력하시오");
-		jl3 = new JLabel("");
-		jt1 = new JTextField();
-		jt2 = new JTextField();
-
-		jb.addActionListener(new MyListener());
-
-		add(jp);
-		jp.setLayout(null);
-		jp.add(jl1);
-		jp.add(jl2);
-		jp.add(jl3);
-		jp.add(jb);
-		jp.add(jt1);
-		jp.add(jt2);
-		jl1.setBounds(0, 0, 200, 50);
-		jl2.setBounds(0, 50, 200, 50);
-		jl3.setBounds(10, 150, 200, 50);
-		jt1.setBounds(200, 0, 100, 50);
-		jt2.setBounds(200, 50, 100, 50);
-		jb.setBounds(10, 100, 100, 50);
+		add(new Dice());
 		setVisible(true);
 	}
-}	
-
+}
 public class problem2 {
 	public static void main(String[] args) {
-		Bank b = new Bank();
+		Prg p = new Prg();
 	}
 }
 
