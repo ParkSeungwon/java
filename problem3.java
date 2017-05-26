@@ -25,7 +25,7 @@ class FontPanel extends JPanel implements ActionListener {
 		g.clearRect(0,0,400,300);
 		for(int i=0; i<5; i++) {
 			g.setFont(new Font(type[getInt()%6], style[getInt()%4], 30));
-			g.drawString("Hello World!", 30, (i+1) * 40 + 30);
+			g.drawString("Hello World!()", 30, (i+1) * 40 + 30);
 		}
 	}
 	private int getInt() {

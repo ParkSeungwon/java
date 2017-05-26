@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{article}
+\synctex=1
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1cm]{geometry}
+\usepackage{graphicx}
+%\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{courier}
+\usepackage{libertine}
+\usepackage{pgfornament}
+\usepackage{eso-pic}
+\usepackage[hangul]{kotex}
+\linespread{1.3}
+
+\title{
+	\centering
+	\pgfornament[width=12cm,color=teal]{84}\\
+	\vspace{1cm}
+	\fontsize{50}{50} \selectfont {TimeMachine Editor\\ with Java}\\
+		\pgfornament[width=12cm,color=teal]{88}\\
+	\vfill}
+\author{
+	\LARGE
+	\begin{tabular}{rl}
+		\hline
+		학번 : & 2016110056\\ 
+		학과 : & 불교학부 \\
+		이름 : & 박승원\\
+		날짜 : & \today\\
+		\hline
+	\end{tabular}\vspace{2cm}
+	\\
+\includegraphics[width=0.5\textwidth]{logo.jpg}
+	}
+\date{}
+
+
+\begin{document}
+%\maketitle
+\pagenumbering{gobble}
+\noindent
+\lstset{language=java, columns=flexible, tabsize=4, frame=shadowbox, showstringspaces=false, breaklines=true, upquote=true, basicstyle=\normalsize}
+
+\section{Functionality}
+\begin{itemize}
+	\item basic editing
+	\item show line number 
+	\item open \& write file
+	\item search string with case sensitive option \textrightarrow show the line in Italic font
+	\item \large\textbf revert to any moment of the document
+\end{itemize}
+
+\section{Algorithm}
+In vector graphic images, we save all the drawing procedures so that we can draw any scale of the designated image.
+Likewise this editor saves all the keystrokes so that we can go back to any moment of the document by repeating the keystrokes from the first.
+
+So this editor saves two files. One is plain text file and the other is integer values of keystrokes and revert-records which is expressed in negative integer.
+
+\begin{lstlisting}
+	public void backtothefuture(int year) {
+		int n = keyrecord.size();
+		record = false;
+		clear();
+		for(int i=0; i<year; i++) {
+			int el = keyrecord.elementAt(i);
+			if(el < 0) backtothefuture(i + el);
+			else input(el);
+			if(n != keyrecord.size()) System.out.println("error"); 
+		}
+	}
+\end{lstlisting}
+
+In upper program is shown the recursive revert procedure. 
+When el is negative, it goes that much keystrokes back. 
+\section{Implementation}
+I had to avoid using JTextArea to record all the keystrokes.
+I used JComponent as textArea.
+Cursor is shown with vertical line.
+
+\newpage
+Basic View
+
+\includegraphics[width=0.8\textwidth]{1.png}
+
+\section{Usage}
+Usage is very intuitive that no explanation is needed except reverting document.
+
+There is a slider at the bottom of the window.
+Right most part of the slider is present and left most is past.
+Slider automatically correct the minimum and maximum of the values according to keystrokes entered.
+If it is moved, text shown will be changed to corresponding moment.
+When you decided a moment you want to go back, click on the button near it.
+And continue writing.
+
+All the procedure is recorded including the part that is canceled by going back.
+
+\section{Benefit}
+If we use this editor with version control system, we can greatly reduce needed commit. Only at the branching moment will we need the commit.
+
+And in normal situations like writing a email, this editor can be used to ease the editing process. Especially when you are going to edit it a lot.
+\end{document}
