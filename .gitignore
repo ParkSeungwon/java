@@ -4,3 +4,7 @@
 *.xoj
 *.log
 *.aux
+find
+.
+-size
++3M
